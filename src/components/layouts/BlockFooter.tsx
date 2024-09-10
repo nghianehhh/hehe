@@ -13,28 +13,6 @@ const { Text, Link } = Typography;
 const BlockFooter = (): React.ReactElement => {
   const { Footer } = Layout;
 
-  const socialLinks = useMemo(
-    () => [
-      {
-        href: "https://www.facebook.com/TuyenDungEcoPharmaEplus",
-        // icon: <FaceBookOutline />,
-      },
-      {
-        href: "https://www.linkedin.com/in/eco-pharma-eplus-06a6b9287/",
-        // icon: <LinkedInOutline />,
-      },
-      {
-        href: "https://www.tiktok.com/@tuyendungecopharma",
-        // icon: <TiktokOutline />,
-      },
-      {
-        href: "https://zalo.me/2706971858922086998",
-        // icon: <ZaloOutline />,
-      },
-    ],
-    []
-  );
-
   return (
     <Footer style={{ background: "#00249C" }}>
       <div className="footer-content">
@@ -45,7 +23,7 @@ const BlockFooter = (): React.ReactElement => {
           >
             KẾT NỐI VỚI CHÚNG TÔI
           </Text>
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             {socialLinks.map((link, index) => (
               <Link
                 key={index}
@@ -54,10 +32,9 @@ const BlockFooter = (): React.ReactElement => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* {link.icon} */}
               </Link>
             ))}
-          </div>
+          </div> */}
         </div>
         <hr className="custom-divider" />
 
